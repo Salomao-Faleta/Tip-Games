@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "config.css";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--EmbedCode);
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.4);
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo{
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--color6);
+}
+
+header nav{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    display: flex;
+}
+
+nav .menu-oppener{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .menu-oppener img{
+    width: inherit;
+    height: inherit;
+}
+
+nav .menu-area{
+    background-color: var(--color1);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+nav .menu-area ul{
+    display: flex;
+    flex-direction: row;  /* MEXE NA DIREÇÃO DOS ITENS */
+}
+
+nav .menu-area ul li{
+    padding: 10px;
+    list-style: none;
+}
+
+nav .menu-area ul li a{
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+nav .menu-area ul li a:hover{
+    color: var(--color5);
+    border-bottom: 1px solid var(--color3);
+}
+
+header .texto{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    color: var(--color6);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .texto .titulo{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+header .texto .subTitulo{
+    font-size: 20px;
+}

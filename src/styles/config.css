@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* FONTES */
+
+:root{
+
+    --color1: #b45a51;
+    --color2: #ba9a66;
+    --color3: #06681c;
+    --color4: #976b49;
+    --color5: #bfa19a;
+    --color6: #fff;
+    --color7: #000;
+
+
+
+    --EmbedCode: "Kode Mono", monospace;   
+    --Montserrat: "Montserrat", sans-serif; 
+
+
+    
+
+
+}

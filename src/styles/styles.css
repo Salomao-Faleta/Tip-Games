@@ -99,7 +99,7 @@ header .texto .subTitulo {
 }
 
 /* PARA TABLET E TELAS GRANDES */
-@media(width <= 768px) {
+@media(max-width: 768px) {
 
 
     nav .menu-oppener {

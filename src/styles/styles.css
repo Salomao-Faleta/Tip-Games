@@ -112,3 +112,11 @@ header .texto .subTitulo {
         display: none;
     }
 }
+
+
+/* SECTIONS */
+
+.sections {
+    width: 100vw;
+    height: 100vh
+}

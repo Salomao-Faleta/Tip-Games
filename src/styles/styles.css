@@ -75,10 +75,12 @@ header nav.oppened{
 }
 
 
-/* RESPONSIVIDADE PARA TELAS MAIORES */
-@media (width > 768px){
-    header{
-        flex-direction: row;
+/* PARA TABLET E TELAS GRANDES */
+@media(width <= 768px) {
+
+
+    nav .menu-oppener {
+        display: block;
     }
 
     .menu-oppener{
@@ -100,4 +102,12 @@ section.banner{
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+}
+
+
+/* SECTIONS */
+
+.sections {
+    width: 100%;
+    height: 100vh
 }

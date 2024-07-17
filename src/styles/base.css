@@ -25,7 +25,7 @@
 
 .button{
     display: inline-block;
-    border: 0.2rem solid var(--color3);
+    border: 0.2rem solid var(--color2);
     color: var(--color6);
     border-radius: 1.5rem;
     padding: 0.8rem 1.5rem;
@@ -34,5 +34,5 @@
 
 .button:hover{
     background-color: var(--color4);
-    color: var(--color7);
+    color: var(--color5);
 }

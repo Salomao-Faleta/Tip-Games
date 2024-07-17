@@ -8,107 +8,59 @@
     box-sizing: border-box;
 }
 
-header {
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    flex: 1;
+    width: 100%;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-position: center;
+    align-items: center;
 }
 
-header .logo {
-    background-color: var(--color1);
-    padding: 10px;
-    border-radius: 15px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    letter-spacing: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--color6);
-}
-
-header nav {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
+.menu-oppener{
     display: flex;
-}
-
-nav .menu-oppener {
-    width: 50px;
-    height: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
     cursor: pointer;
+}
+
+.menu-oppener span{
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--color7);
+}
+
+header nav{
     display: none;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-nav .menu-oppener img {
-    width: inherit;
-    height: inherit;
-}
-
-nav .menu-area {
-    background-color: var(--color1);
-    padding: 5px;
-    border-radius: 15px;
-}
-
-nav .menu-area ul {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    /* MEXE NA DIREÇÃO DOS ITENS */
-}
-
-nav .menu-area ul li {
-    padding: 10px;
-    list-style: none;
-}
-
-nav .menu-area ul li a {
-    text-decoration: none;
-    color: var(--color6);
-    font-weight: bolder;
-    font-size: 18px;
-}
-
-nav .menu-area ul li a:hover {
-    color: var(--color5);
-    border-bottom: 1px solid var(--color3);
-}
-
-header .texto {
-    position: absolute;
-    top: 220px;
-    left: 30px;
-    color: var(--color6);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-header .texto .titulo {
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-header .texto .subTitulo {
-    font-size: 20px;
-}
-
-/* PARA TABLET E TELAS GRANDES */
-@media(width <= 768px) {
-
-
-    nav .menu-oppener {
-        display: block;
+@media (width > 768px){
+    header{
+        flex-direction: row;
     }
 
-
-    nav .menu-area ul {
-        flex-direction: column;
+    .menu-oppener{
         display: none;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
     }
 }

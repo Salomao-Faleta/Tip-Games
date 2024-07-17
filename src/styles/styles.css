@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "config.css";
+@import "base.css";
 
 * {
     padding: 0px;
@@ -50,6 +50,19 @@ header nav{
     padding: 2rem;
 }
 
+header nav a{
+    text-decoration: none;
+    color: var(--color4);
+}
+
+
+/* CLASSE PARA ABIRI OU FECHAR O MENU */
+header nav.oppened{
+    display: flex;
+}
+
+
+/* RESPONSIVIDADE PARA TELAS MAIORES */
 @media (width > 768px){
     header{
         flex-direction: row;

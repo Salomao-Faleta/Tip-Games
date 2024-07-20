@@ -1,12 +1,14 @@
 @charset "UTF-8";
 @import "base.css";
 
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: var(--EmbedCode);
     box-sizing: border-box;
 }
+
 
 header {
     display: flex;
@@ -75,23 +77,22 @@ header nav.oppened {
 }
 
 
-/* PARA TABLET E TELAS GRANDES */
+/* MENU PARA TABLET E TELAS GRANDES */
 @media(width >=768px) {
     header {
         flex-direction: row;
     }
-    
+
     .menu-oppener {
         display: none;
     }
 
-    header nav{
+    header nav {
         display: flex;
         flex-direction: row;
     }
 
 }
-
 
 /* SECTION BANNER */
 
@@ -101,4 +102,47 @@ section.banner {
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.banner .container {
+    text-align: center;
+    color: var(--color6); 
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
+}
+
+.container h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.container p {
+    font-size: 13px;
+}
+
+/* TEXTOS DO BANNER PARA TELAS GARNDES */
+
+@media (width >=768px) {
+    section.banner {
+        justify-content: left;
+    }
+
+    section.banner .container {
+        margin-left: 30px;
+
+    }
+
+
+    .container h2 {
+        font-size: 20px;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
 }

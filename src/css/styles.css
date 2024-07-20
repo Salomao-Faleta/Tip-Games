@@ -146,3 +146,83 @@ section.banner .container {
         font-size: 16px;
     }
 }
+
+
+/* ALGUNS JOGOS DE INÍCIO */
+
+.some-games .grid{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 2rem;
+    background-color: gray;
+    padding: 20px;
+}
+
+@media (width >= 768px){
+    .some-games .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 1024px){
+    .some-games .grid{
+        grid-template-columns: 3, 1fr;
+    }
+}
+
+/* GRID IETM */
+
+.some-games .item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.some-games .item .image{
+    width: 100%;
+    height: 300px;
+    transition: all ease 0.5s;
+}
+
+.some-games .item .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: red;
+    color: aqua;
+    padding: 2rem;
+    font-size: 1.9rem;
+    line-height: 1.5rem;
+    transition: all 0.5s linear;
+    opacity: 0;
+
+    inset: 0 0 0 0;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    /* O inset resume as propriedades */
+
+
+
+}
+
+
+.some-games .item .overlay .button{
+    margin: 2rem;
+    color: yellow;
+    text-decoration: none;
+}
+
+.some-games .item:hover .image{
+    transform: scale(1.2);
+}
+
+.some-games .item:hover .overlay{
+    opacity: 1;
+}
+
+

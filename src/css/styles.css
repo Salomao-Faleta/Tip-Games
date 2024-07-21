@@ -109,7 +109,7 @@ section.banner {
 
 section.banner .container {
     text-align: center;
-    color: var(--color6); 
+    color: var(--color6);
     text-shadow: 2px 2px 4px #000000, -2px -2px 4px #ffffff;
 }
 
@@ -150,8 +150,18 @@ section.banner .container {
 
 /* ALGUNS JOGOS DE INÍCIO */
 
-.some-games .grid{
-    margin-top: 5rem;
+.some-games .text {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 15px;
+    border-top: 2px solid var(--color4);
+    border-bottom: 2px solid var(--color4);
+}
+
+.some-games .grid {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 2rem;
@@ -159,40 +169,70 @@ section.banner .container {
     padding: 20px;
 }
 
-@media (width > 768px){
-    .some-games .grid{
+/* RESONSIVIDADE PARA TABLET */
+@media (width > 768px) {
+    .some-games .grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .item .overlay p {
+        font-size: 24px;
+    }
+
+    .item .overlay a {
+        font-size: 18px;
+    }
+
+
+    .some-games .text {
+        font-size: 18px;
     }
 }
 
-@media (width > 1024px){
-    .some-games .grid{
+/* RESPOSIVIDADE PARA TABLET */
+@media (width > 1024px) {
+    .some-games .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .item .overlay p {
+        font-size: 28px;
+    }
+
+    .item .overlay a {
+        font-size: 22px;
+    }
+
+
+    .some-games .text{
+        font-size: 22PX;
     }
 }
 
 /* GRID IETM */
 
-.some-games .item{
+.some-games .item {
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
 }
 
-.some-games .item .image{
+.some-games .item .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all ease 0.5s;
 }
 
-.some-games .item .overlay{
+.some-games .item .overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: var(--color6);
     padding: 2rem;
     font-size: 1.9rem;
@@ -207,23 +247,27 @@ section.banner .container {
     left: 0; */
     /* O inset resume as propriedades */
 
+}
 
+.item .overlay p {
+    font-size: 22px;
+}
 
+.item .overlay a {
+    font-size: 14px;
 }
 
 
-.some-games .item .overlay .button{
+.some-games .item .overlay .button {
     margin: 2rem;
     color: var(--color6);
     text-decoration: none;
 }
 
-.some-games .item:hover .image{
+.some-games .item:hover .image {
     transform: scale(1.2);
 }
 
-.some-games .item:hover .overlay{
+.some-games .item:hover .overlay {
     opacity: 1;
 }
-
-

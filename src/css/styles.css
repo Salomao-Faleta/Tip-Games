@@ -292,7 +292,6 @@ section.banner .container {
     height: 100%;
     display: flex;
     transition: all ease 0.3s;
-    width: calc(100vw * 3);
 }
 
 .slider .slider--width .slider--item{

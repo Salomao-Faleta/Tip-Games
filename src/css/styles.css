@@ -314,13 +314,14 @@ section.banner .container {
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     width: 100%;
 }
 
 .slider--controls .slider--control {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
     background-color: white;
     border-radius: 50%;
     text-align: center;
@@ -337,6 +338,20 @@ section.banner .container {
 }
 
 
+/* RESONSIVIDADE PARA TABLET */
+@media (width > 768px) {
+    .slider--controls {
+        align-items: center;
+    }
+
+    .slider--controls .slider--control {
+        margin: 0px;
+    }
+
+}
+
+
+
 
 
 /* ESTILIZAÇÃO DOS ITENS */
@@ -348,7 +363,7 @@ section.banner .container {
     flex-direction: column;
 }
 
-.slider--item .slider-item--foto img{
+.slider--item .slider-item--foto img {
     width: 300px;
     height: 200px;
     border-radius: 50%;
@@ -358,10 +373,6 @@ section.banner .container {
     /* object-position: top; */
 }
 
-.slider--item .slider-item--nome{
+.slider--item .slider-item--nome {}
 
-}
-
-.slider--item .slider-item--descricao{
-
-}
+.slider--item .slider-item--descricao {}

@@ -294,7 +294,7 @@ section.banner .container {
 .slider .slider--width {
     height: 100%;
     display: flex;
-    transition: all ease 0.3s;
+    transition: .9s cubic-bezier(.59,.04,.38,.97);
 }
 
 .slider .slider--width .slider--item {
@@ -306,6 +306,10 @@ section.banner .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -332,10 +336,10 @@ section.banner .container {
     align-items: center;
     font-size: 40px;
 }
-
+/* 
 .slider--controls .slider--control::selection {
     display: none;
-}
+} */
 
 
 /* RESONSIVIDADE PARA TABLET */
@@ -361,6 +365,35 @@ section.banner .container {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+    color: var(--color6);
+}
+
+.slider--item .slider-item--container h1 {
+    padding: 30px;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+.slider--item .slider-item--container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* PARA TELAS TABLETS */
+@media (width > 768px) {
+
+    .slider--item .slider-item--container h1 {
+        padding: 30px;
+        letter-spacing: 8px;
+        font-size: 20px;
+    }
+
+    .slider--item .slider-item--container p {
+        text-align: center;
+        font-size: 17px;
+    }
+
 }
 
 .slider--item .slider-item--foto img {
@@ -373,6 +406,6 @@ section.banner .container {
     /* object-position: top; */
 }
 
-.slider--item .slider-item--nome {}
-
-.slider--item .slider-item--descricao {}
+.slider--item .slider-item--nome {
+    padding: 10px 0px;
+}

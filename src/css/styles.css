@@ -338,13 +338,12 @@ section.banner .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
 }
-/* 
-.slider--controls .slider--control::selection {
-    display: none;
-} */
 
+.slider--controls .slider--control img{
+    width: 30px;
+    height: 30px;
+}
 
 /* RESONSIVIDADE PARA TABLET */
 @media (width > 768px) {

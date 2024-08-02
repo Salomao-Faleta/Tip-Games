@@ -49,4 +49,4 @@ function updateMargin(){
     document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`
 
 }
-// setInterval(goNext, 10000);
+setInterval(goNext, 10000);

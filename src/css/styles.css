@@ -166,6 +166,8 @@ section.banner .container {
 .some-games .grid {
     margin-top: 1rem;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(1fr);
     gap: 2rem;
     background-color: var(--color4);
@@ -220,6 +222,8 @@ section.banner .container {
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
+    width: auto;
+    height: 300px;
 }
 
 .some-games .item .image {
@@ -394,16 +398,16 @@ section.banner .container {
         font-size: 17px;
     }
 
+    .slider--item .slider-item--descricao{
+        width: 50%;
+    }
 }
 
 .slider--item .slider-item--foto img {
     width: 300px;
-    height: 200px;
+    height: 300px;
     border-radius: 50%;
-
-    /* a  definir */
-    /* object-fit: cover; */
-    /* object-position: top; */
+    object-fit: cover; 
 }
 
 .slider--item .slider-item--nome {

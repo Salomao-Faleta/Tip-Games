@@ -33,6 +33,8 @@
     border-radius: 1.5rem;
     padding: 0.8rem 1.5rem;
     transition: all ease 0.2s;
+    text-decoration: none;
+    margin: 10px;
 }
 .button:hover{
     background-color: var(--color4);

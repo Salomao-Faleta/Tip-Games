@@ -412,3 +412,66 @@ section.banner .container {
 .slider--item .slider-item--nome {
     padding: 10px 0px;
 }
+
+
+
+
+/* NOSSOS JOGOS */
+
+.nossos-jogos h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.nossos-jogos .grid{
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: brown;
+    padding: 10px;
+    justify-items: center;
+}
+
+/* RESONSIVIDADE PARA TABLET */
+@media (width > 768px){
+    .nossos-jogos .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESONSIVIDADE PARA TELAS MAIORES */
+@media (width > 1024px){
+    .nossos-jogos .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.nossos-jogos .grid .grid--item{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+}
+
+
+.nossos-jogos .grid .grid--item img{
+   width: inherit;
+}
+
+.nossos-jogos .grid--overlay{
+    position: absolute;
+    inset: 0px 0px 0px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    color: var(--color6);
+    transition: all 0.5s linear;
+}
+
+.nossos-jogos .grid--overlay:hover{
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    opacity: 1;
+}

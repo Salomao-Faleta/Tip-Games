@@ -418,17 +418,20 @@ section.banner .container {
 
 /* NOSSOS JOGOS */
 
-.nossos-jogos h1{
+.nossos-jogos h1,
+#contato h1{
     text-align: center;
     padding: 10px 0px;
 }
+
+
 
 .nossos-jogos .grid{
     display: grid;
     justify-content: center; 
     align-items: center;
     grid-template-columns: repeat(1, 1fr);
-    background-color: brown;
+    background-color: var(--color4);
     padding: 10px;
     justify-items: center;
 }
@@ -475,3 +478,53 @@ section.banner .container {
     color: white;
     opacity: 1;
 }
+
+
+
+
+/* SESSÃO CONATO */
+
+#contato .container{
+    color: var(--color6);
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+
+#contato form{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+#contato form div{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato .input{
+    outline: none;
+    padding: 5px;
+    border: 3px solid transparent;
+    transition: all ease 0.5s;
+}
+
+#contato .input:focus{
+    border-color:var(--color4);
+}
+
+#contato #textarea{
+    width: 40%;
+    max-width: 100%;
+    height: 200px;
+}
+
+#contato button{
+    cursor: pointer;
+    color: var(--color7);
+}
+
+
+

@@ -491,6 +491,7 @@ section.banner .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 

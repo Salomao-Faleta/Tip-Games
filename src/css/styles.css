@@ -100,7 +100,7 @@ header nav.oppened {
 /* SECTION BANNER */
 
 section.banner {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/icones/banner.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
